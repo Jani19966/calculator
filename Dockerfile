@@ -6,6 +6,7 @@ COPY backend backend
 COPY frontend frontend
 COPY go.mod ./
 COPY go.sum ./
+COPY main.go ./
 RUN go mod download
 
 RUN go build -o /bin/calculator
